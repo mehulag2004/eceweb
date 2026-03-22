@@ -1,15 +1,17 @@
 /* =========================
-   GLOBAL FIXES
+   GLOBAL
 ========================= */
 body {
     padding-top: 70px;
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', sans-serif;
 }
 
 /* =========================
    THEME COLORS
 ========================= */
 .bg-dark {
-    background-color: #800020 !important;
+    background: linear-gradient(90deg, #800020, #a83232) !important;
 }
 
 .bg-maroon {
@@ -17,16 +19,43 @@ body {
 }
 
 /* =========================
+   NAVBAR (NEW ✨)
+========================= */
+.navbar-nav .nav-link {
+    color: #fff !important;
+    font-weight: 500;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffc107 !important;
+    transform: translateY(-2px);
+}
+
+.nav-link.active {
+    border-bottom: 2px solid #ffc107;
+}
+
+/* =========================
    HERO / HEADER
 ========================= */
 .hero {
-    padding: 40px 0;
-    background: white;
+    padding: 50px 0;
+    background: linear-gradient(to right, #ffffff, #f3f3f3);
     text-align: center;
+    border-bottom: 2px solid #800020;
+}
+
+.hero h3 {
+    font-weight: 700;
+    color: #800020;
 }
 
 .date {
     font-size: 18px;
+    color: #ff5733;
+    font-weight: bold;
 }
 
 /* =========================
@@ -35,8 +64,9 @@ body {
 .announcement {
     background: #ff5733;
     color: white;
-    padding: 5px;
+    padding: 8px;
     text-align: center;
+    font-weight: 600;
 }
 
 /* =========================
@@ -48,55 +78,52 @@ body {
 }
 
 .table tbody tr:hover {
-    background-color: #f5f5f5;
+    background-color: #f1f1f1;
+    transition: 0.2s;
 }
 
 /* =========================
-   PAPER SUBMISSION SECTION (ADDED)
+   CARD UI (UPGRADED ✨)
 ========================= */
-
-/* Container spacing */
-.paper-container {
-    margin-top: 20px;
-    margin-bottom: 30px;
-}
-
-/* Card styling */
-.paper-card {
-    border: 1px solid #ddd;
-    border-radius: 5px;
+.card, .paper-card {
+    border: none;
+    border-radius: 12px;
     margin-bottom: 20px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
 }
 
-/* Card header */
-.paper-card-header {
+.card:hover, .paper-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Headers */
+.card-header, .paper-card-header {
     background-color: #800020;
     color: white;
     padding: 12px 20px;
-    border-bottom: 1px solid #ddd;
+    font-weight: bold;
+    letter-spacing: 0.5px;
 }
 
-.paper-card-header h5 {
-    margin: 0;
-    font-size: 1.1rem;
-}
-
-/* Card body */
-.paper-card-body {
+/* Body */
+.card-body, .paper-card-body {
     padding: 20px;
+    color: #333;
+    line-height: 1.6;
 }
 
-/* Card footer */
+/* Footer */
 .paper-card-footer {
     background-color: #f8f9fa;
     padding: 15px 20px;
-    border-top: 1px solid #eee;
     text-align: center;
     font-weight: 500;
 }
 
-/* Theme list layout */
+/* =========================
+   THEME LIST
+========================= */
 .theme-list {
     column-count: 2;
     column-gap: 30px;
@@ -108,7 +135,6 @@ body {
     }
 }
 
-/* Theme items */
 .theme-item {
     padding: 8px 0;
     padding-left: 20px;
@@ -131,7 +157,9 @@ body {
     font-weight: 500;
 }
 
-/* Paper links */
+/* =========================
+   LINKS
+========================= */
 .paper-link {
     color: #800020;
     font-weight: 500;
@@ -146,18 +174,43 @@ body {
 }
 
 /* =========================
+   IMAGES (NEW ✨)
+========================= */
+img {
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+img:hover {
+    transform: scale(1.03);
+}
+
+/* =========================
    FOOTER
 ========================= */
 .footer {
     background: #800020;
     color: white;
-    padding: 10px;
+    padding: 15px;
     margin-top: 20px;
     text-align: center;
 }
 
 /* =========================
-   OPTIONAL ANIMATION
+   BUTTON (OPTIONAL 🔥)
+========================= */
+.btn-warning {
+    background-color: #ffc107;
+    border: none;
+    font-weight: 500;
+}
+
+.btn-warning:hover {
+    background-color: #e0a800;
+}
+
+/* =========================
+   BLINK TEXT
 ========================= */
 .blink-text {
     color: red;
