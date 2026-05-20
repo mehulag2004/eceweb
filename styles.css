@@ -66,6 +66,30 @@ body {
     color: #800020;
 }
 
+@media(max-width:768px){
+
+    .hero h3{
+
+        font-size: 1.8rem;
+
+        line-height: 1.4;
+    }
+
+    .hero img{
+
+        max-width: 110px;
+
+        margin-bottom: 15px;
+    }
+
+    .stats-card{
+
+        width: 90%;
+
+        min-width: unset;
+    }
+}
+
 .date {
     font-size: 18px;
     color: #ff5733;
